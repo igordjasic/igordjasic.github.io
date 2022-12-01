@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Igor">
+        <title>Project</title>
+        
+        
+        <link href="css/style_IDj61868.css" rel="stylesheet">
+        <link href="css/page2_IDj61868.css" rel="stylesheet">
+        
+        
+        
+    </head>
+    <body>
+
+        <header>
+            
+            <img id="cam" src="images/camera-icon-white-10.png" alt="cameralogo" height="70px" width="70px">
+            <h1>Igor Djasic's Gallery</h1>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">HomePage</a></li>
+                    <li><a href="page2_IDj61868.html">Sign up</a></li>
+                    <li><a id="pg3" class="disable" href="page3_IDj61868.html">Images</a></li>
+                    <li><a class="disable" href="page4_IDj61868.html">Review</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+        <form id="signIn">
+            <fieldset>
+                
+                <legend><h2>Sign up</h2></legend>
+                <div>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" class="input" id="fullName"  name="fullName" 
+                    placeholder="Enter your full name." pattern="[A-Z][a-zA-Z]+\s+[A-Z][a-zA-Z]+" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="text" class="input" id="email" name="email"
+                    placeholder="email@address.com" 
+                    pattern="[a-zA-Z]+@+[a-zA-Z]+\.com|[a-zA-Z]+@+[a-zA-Z]+\.ca" required>
+                </div>
+                <div>
+                    <label for="stuId">Student ID</label>
+                    <input type="text" class="input" id="stuId"  name="stuId" 
+                    placeholder="XXXXXXXXXID" pattern="\d{9}ID" required>
+                </div>
+                <div>
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" class="input" id="birthDate"  name="birthDate" 
+                    placeholder="Enter your date of birth." required>
+                </div>
+                
+                <input class="btnMove" type="reset" class="mover" name="reset" value="Clear">
+                <input id="subBtn" class="btnMove" type="submit" name="submitData" value="Submit" onclick="return validateInput(this.form)">
+                
+                
+                
+                
+            </fieldset>
+        </form>
+            
+        
+        <div id="target">
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script src="script/page2_IDj61868.js"></script>
+    </body>
+    </html>
